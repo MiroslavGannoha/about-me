@@ -1,8 +1,14 @@
-import type { AppProps } from 'next/app'
-import 'tailwindcss/tailwind.css'
-import { MainContainer } from '../containers'
+import type { AppProps } from 'next/app';
+import 'tailwindcss/tailwind.css';
+import '../styles/global.css';
+import { MainContainer } from '../containers';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <MainContainer><Component {...pageProps} /></MainContainer>
+  return (
+    <MainContainer>
+      <Component {...pageProps} />
+    </MainContainer>
+  );
 }
-export default MyApp
+
+export default MyApp;
