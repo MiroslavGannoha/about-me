@@ -12,6 +12,15 @@ module.exports = {
       colors: {
         primary: colors.green,
         secondary: colors.blue,
+        nodejs: '#3C873A',
+        reactjs: '#60DAFB',
+        javascript: '#f7df1e',
+        html5: '#f06529',
+        solidity: '#656565',
+        rust: '#CE412B',
+        typescript: '#007ACC',
+        mobxjs: '#DE5C16',
+        css3: '#2965F1'
       }
     }
   },
