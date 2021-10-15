@@ -12,7 +12,7 @@ export const Link: React.FC<
       : '';
   return (
     <NextLink {...otherProps}>
-      <a className={`${className || 'text-green-600 hover:text-green-400 transition duration-500 ease-in-out'} ${activeClass}`}>
+      <a className={`text-gray-700 border-b-2 hover:text-green-400 transition duration-500 ease-in-out ${className} ${activeClass}`}>
         {children}
       </a>
     </NextLink>
