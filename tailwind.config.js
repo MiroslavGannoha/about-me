@@ -20,7 +20,8 @@ module.exports = {
         rust: '#CE412B',
         typescript: '#007ACC',
         mobxjs: '#DE5C16',
-        css3: '#2965F1'
+        css3: '#2965F1',
+        typescript: "#007acc"
       }
     }
   },
@@ -28,6 +29,7 @@ module.exports = {
     extend: {
       backgroundColor: ['even', 'odd'],
       textColor: ['active', 'visited'],
+      filter: ['hover', 'group-hover'],
     }
   },
   plugins: [],
