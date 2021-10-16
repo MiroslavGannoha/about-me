@@ -29,6 +29,7 @@ module.exports = {
     extend: {
       backgroundColor: ['even', 'odd'],
       textColor: ['active', 'visited'],
+      boxShadow: ['active'],
       filter: ['hover', 'group-hover'],
     }
   },

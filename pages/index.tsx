@@ -1,15 +1,17 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import NextImg from 'next/image';
-import { Link, Section } from '../components';
+import { Input, Link, Section, Card, Textarea, FormGroup } from '../components';
 import { Layout } from '../layout';
-import { Card } from '../components/Card';
-import {
-  FontAwesomeIcon,
-  FontAwesomeIconProps,
-} from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import {
+  faComment,
+  faEnvelope,
+  faFilePdf,
+  faFont,
+} from '@fortawesome/free-solid-svg-icons';
+import { Button } from '../components/Button';
 
 const SkillLogoDesc = ({ desc }: { desc: string }) => (
   <div className="text-xs text-center text-gray-400 mt-2 border-t">{desc}</div>
@@ -21,12 +23,14 @@ const SkillImageLogo = ({
   className,
   width,
   height,
+  delay,
 }: {
   title: string;
   src: string;
   className?: string;
   width?: string;
   height?: string;
+  delay?: number;
 }) => (
   <>
     <NextImg
@@ -35,7 +39,7 @@ const SkillImageLogo = ({
       width={width || '65px'}
       height={height || '65px'}
       title={title}
-      className={`${className} group-hover:filter-none filter grayscale transition duration-500 ease-in-out `}
+      className={`${className || ''} group-hover:filter-none filter grayscale transition duration-1000 ease-in-out `}
     />
     <SkillLogoDesc desc={title} />
   </>
@@ -192,8 +196,49 @@ const Home: NextPage = () => {
             </li>
           </ul>
         </Section>
-        <Section id="cv" className="bg-pattern"></Section>
-        <Section className="h-32 flex flex-col justify-center items-center">
+        <Section id="cv" className="bg-pattern flex justify-center">
+          <h3 className="text-4xl text-center mb-10">Experience</h3>
+        </Section>
+        <Section id="contact" className="">
+          <h3 className="text-4xl text-center mb-10">Contact</h3>
+          <form
+            name="Contact form"
+            action="https://getform.io/f/e836849c-158a-4068-9bef-db62b40b5d87"
+            className="flex gap-4 flex-col px-0 md:px-32 max-w-4xl mx-auto text-lg"
+            method="POST"
+          >
+            <FormGroup icon={faFont}>
+              <Input
+                type="text"
+                name="name"
+                id="inputName"
+                placeholder="Name"
+                required={true}
+              />
+            </FormGroup>
+            <FormGroup icon={faEnvelope}>
+              <Input
+                type="email"
+                name="email"
+                id="inputEmail"
+                placeholder="Email"
+                required={true}
+              />
+            </FormGroup>
+            <Textarea
+              name="message"
+              id="inputMessage"
+              rows={5}
+              placeholder="Message"
+              required={true}
+            />
+
+            <Button type="submit"  >
+              Send
+            </Button>
+          </form>
+        </Section>
+        <Section className="bg-pattern h-32 flex flex-col justify-center items-center">
           © Miroslav Gannoha
         </Section>
       </Layout>
