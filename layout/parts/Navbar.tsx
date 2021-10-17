@@ -20,8 +20,8 @@ export const Navbar = (): JSX.Element => {
       <div>
         <NavbarLink href="/#about">Home</NavbarLink>
         <NavbarLink href="/#skills">Skills</NavbarLink>
+        <NavbarLink href="/#experience">Experience</NavbarLink>
         <NavbarLink href="/#contact">Contact</NavbarLink>
-        <NavbarLink href="/#cv">CV</NavbarLink>
       </div>
     </nav>
   );

@@ -12,6 +12,8 @@ import {
   faFont,
 } from '@fortawesome/free-solid-svg-icons';
 import { Button } from '../components/Button';
+import { Chrono } from 'react-chrono';
+import { experienceChronoData } from '../dataStorage';
 
 const SkillLogoDesc = ({ desc }: { desc: string }) => (
   <div className="text-xs text-center text-gray-400 mt-2 border-t">{desc}</div>
@@ -39,7 +41,9 @@ const SkillImageLogo = ({
       width={width || '65px'}
       height={height || '65px'}
       title={title}
-      className={`${className || ''} group-hover:filter-none filter grayscale transition duration-1000 ease-in-out `}
+      className={`${
+        className || ''
+      } group-hover:filter-none filter grayscale transition duration-1000 ease-in-out`}
     />
     <SkillLogoDesc desc={title} />
   </>
@@ -196,8 +200,24 @@ const Home: NextPage = () => {
             </li>
           </ul>
         </Section>
-        <Section id="cv" className="bg-pattern flex justify-center">
+        <Section id="experience" className="bg-pattern justify-center">
           <h3 className="text-4xl text-center mb-10">Experience</h3>
+          <div style={{ height: '850px' }} className="filter grayscale hover:filter-none transition duration-1000 ease-in-out">
+            <Chrono mode="VERTICAL"
+              theme={{ 
+                primary: "rgba(17, 24, 39, var(--tw-bg-opacity))",
+                secondary: "rgba(52, 211, 153, var(--tw-bg-opacity))",
+                titleColor: "white",
+              }}
+            >
+              <div>
+                asd
+              </div>
+              <div>
+                asd 2
+              </div>
+              </Chrono>
+          </div>
         </Section>
         <Section id="contact" className="">
           <h3 className="text-4xl text-center mb-10">Contact</h3>
@@ -233,9 +253,7 @@ const Home: NextPage = () => {
               required={true}
             />
 
-            <Button type="submit"  >
-              Send
-            </Button>
+            <Button type="submit">Send</Button>
           </form>
         </Section>
         <Section className="bg-pattern h-32 flex flex-col justify-center items-center">
