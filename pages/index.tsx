@@ -41,9 +41,8 @@ const SkillImageLogo = ({
       width={width || '65px'}
       height={height || '65px'}
       title={title}
-      className={`${
-        className || ''
-      } group-hover:filter-none filter grayscale transition duration-1000 ease-in-out`}
+      className={`${className || ''
+        } group-hover:filter-none filter grayscale transition duration-1000 ease-in-out`}
     />
     <SkillLogoDesc desc={title} />
   </>
@@ -55,56 +54,59 @@ const Home: NextPage = () => {
       <Layout>
         <Section
           id="about"
-          className="grid grid-rows-2 grid-flow-col gap-4  bg-pattern"
+          className="bg-pattern"
         >
-          <Card className="row-span-2 col-span-1 text-center">
-            <NextImg
-              className="rounded-full"
-              src="/cog.png"
-              alt="Miro"
-              width="128rem"
-              height="128rem"
-            />
-            <div className="pt-6 space-y-4">
-              <figcaption className="flex flex-col gap-1">
-                <div className="text-3xl font-medium ">Miroslav Gannoha</div>
-                <div className="text-gray-500">Senior Software Engineer</div>
-                <div className="">
-                  <Link href="https://www.fluxon.com/" className="text-xl">
-                    Fluxon
+          <div className="max-w-7xl grid grid-rows-2 grid-flow-col gap-4 mx-auto">
+            <Card className="row-span-2 col-span-1 text-center">
+              <NextImg
+                className="rounded-full"
+                src="/cog.png"
+                alt="Miro"
+                width="128rem"
+                height="128rem"
+              />
+              <div className="pt-6 space-y-4">
+                <figcaption className="flex flex-col gap-1">
+                  <div className="text-3xl font-medium ">Miroslav Gannoha</div>
+                  <div className="text-gray-500">Senior Software Engineer</div>
+                  <div className="">
+                    <Link href="https://www.fluxon.com/" className="text-xl">
+                      Fluxon
+                    </Link>
+                  </div>
+                </figcaption>
+                <blockquote>
+                  <p className="text-lg font-semibold">
+                    “Everything is moving forward - people, society, tech, world.
+                    In order to keep up and push forward, you got to stay
+                    open-minded, learn and evolve all the time, or else you will
+                    be left behind.”
+                  </p>
+                </blockquote>
+                <div className="text-3xl flex gap-5 justify-center">
+                  <Link href="mailto:miroslav.gannoha@gmail.com">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                  </Link>
+                  <Link href="https://github.com/MiroslavGannoha">
+                    <FontAwesomeIcon icon={faGithub} />
+                  </Link>
+                  <Link href="https://stackoverflow.com/users/2677865/miro">
+                    <FontAwesomeIcon icon={faStackOverflow} />
+                  </Link>
+                  <Link href="https://github.com/MiroslavGannoha">
+                    <FontAwesomeIcon icon={faFilePdf} />
                   </Link>
                 </div>
-              </figcaption>
-              <blockquote>
-                <p className="text-lg font-semibold">
-                  “Everything is moving forward - people, society, tech, world.
-                  In order to keep up and push forward, you got to stay
-                  open-minded, learn and evolve all the time, or else you will
-                  be left behind.”
-                </p>
-              </blockquote>
-              <div className="text-3xl flex gap-5 justify-center">
-                <Link href="mailto:miroslav.gannoha@gmail.com">
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </Link>
-                <Link href="https://github.com/MiroslavGannoha">
-                  <FontAwesomeIcon icon={faGithub} />
-                </Link>
-                <Link href="https://stackoverflow.com/users/2677865/miro">
-                  <FontAwesomeIcon icon={faStackOverflow} />
-                </Link>
-                <Link href="https://github.com/MiroslavGannoha">
-                  <FontAwesomeIcon icon={faFilePdf} />
-                </Link>
               </div>
-            </div>
-          </Card>
-          <Card className="col-span-2">Hey, I am Miro 👋</Card>
-          <Card className="col-span-2">asd</Card>
+            </Card>
+            <Card className="col-span-2">Hey, I am Miro 👋</Card>
+            <Card className="col-span-2">asd</Card>
+          </div>
+
         </Section>
         <Section id="skills" className="group">
           <h3 className="text-4xl text-center mb-10 group">Skills</h3>
-          <ul className="grid grid-flow-row grid-cols-3 sm:grid-cols-4 text-6xl gap-8 justify-items-center mt-6 mb-8 text-gray-600">
+          <ul className="grid grid-flow-row grid-cols-3 sm:grid-cols-4 text-6xl gap-8 justify-items-center mt-6 mb-8 text-gray-600 max-w-7xl mx-auto">
             <li className="group">
               <SkillImageLogo
                 src="/html5.svg"
@@ -181,30 +183,19 @@ const Home: NextPage = () => {
                 className="contrast-50"
               />
             </li>
-          </ul>
-          <h4 className="text-2xl text-center">Going to learn:</h4>
-          <ul className="grid grid-flow-row grid-cols-3 sm:grid-cols-4 text-6xl gap-8 justify-items-center mt-6 mb-8 text-gray-600">
             <li className="group">
               <SkillImageLogo
-                src="/solidity.svg"
-                title="Solidity"
-                className="contrast-0"
-              />
-            </li>
-            <li className="group">
-              <SkillImageLogo
-                src="/rust.svg"
-                title="Rust"
-                className="contrast-0"
+                src="/graphql.svg"
+                title="GraphQL"
               />
             </li>
           </ul>
         </Section>
         <Section id="experience" className="bg-pattern justify-center">
           <h3 className="text-4xl text-center mb-10">Experience</h3>
-          <div style={{ height: '850px' }} className="filter grayscale hover:filter-none transition duration-1000 ease-in-out">
+          <div style={{ height: '850px' }} className="filter grayscale hover:filter-none transition duration-1000 ease-in-out max-w-7xl mx-auto">
             <Chrono mode="VERTICAL"
-              theme={{ 
+              theme={{
                 primary: "rgba(17, 24, 39, var(--tw-bg-opacity))",
                 secondary: "rgba(52, 211, 153, var(--tw-bg-opacity))",
                 titleColor: "white",
@@ -216,7 +207,11 @@ const Home: NextPage = () => {
               <div>
                 asd 2
               </div>
-              </Chrono>
+              <div>
+                asd 2
+              </div>
+
+            </Chrono>
           </div>
         </Section>
         <Section id="contact" className="">
@@ -224,7 +219,7 @@ const Home: NextPage = () => {
           <form
             name="Contact form"
             action="https://getform.io/f/e836849c-158a-4068-9bef-db62b40b5d87"
-            className="flex gap-4 flex-col px-0 md:px-32 max-w-4xl mx-auto text-lg"
+            className="flex gap-4 flex-col px-0 md:px-32 max-w-7xl mx-auto text-lg"
             method="POST"
           >
             <FormGroup icon={faFont}>
