@@ -15,10 +15,10 @@ export const Navbar = (): JSX.Element => {
   return (
     <nav className="bg-gray-300 hover:bg-gray-400 w-full flex justify-between p-4 fixed top-0 shadow-md z-50 transition duration-500 ease-in-out">
       <div>
-        <NavbarLink href="/#about">Miroslav Gannoha</NavbarLink>
+        <NavbarLink href="/#profile">Miroslav Gannoha</NavbarLink>
       </div>
       <div>
-        <NavbarLink href="/#about">Home</NavbarLink>
+        <NavbarLink href="/#profile">Profile</NavbarLink>
         <NavbarLink href="/#skills">Skills</NavbarLink>
         <NavbarLink href="/#experience">Experience</NavbarLink>
         <NavbarLink href="/#contact">Contact</NavbarLink>

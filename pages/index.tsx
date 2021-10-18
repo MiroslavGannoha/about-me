@@ -53,7 +53,7 @@ const Home: NextPage = () => {
     <div>
       <Layout>
         <Section
-          id="about"
+          id="profile"
           className="bg-pattern"
         >
           <div className="max-w-7xl grid grid-rows-2 grid-flow-col gap-4 mx-auto">
