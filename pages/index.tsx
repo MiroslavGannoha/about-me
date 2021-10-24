@@ -60,10 +60,11 @@ const Home: NextPage = () => {
           <Card className="row-span-2 col-span-1 text-center">
             <NextImg
               className="rounded-full"
-              src="/cog.png"
+              src="/photo.jfif"
               alt="Miro"
               width="128rem"
               height="128rem"
+              quality="100"
             />
             <div className="pt-6 space-y-4">
               <figcaption className="flex flex-col gap-1">
@@ -76,7 +77,7 @@ const Home: NextPage = () => {
                 </div>
               </figcaption>
               <blockquote>
-                <p className="text-lg font-semibold">
+                <p className="text-lg">
                   “Everything is moving forward - people, society, tech, world.
                   In order to keep up and push forward, you got to stay
                   open-minded, learn and evolve all the time, or else you will
@@ -99,8 +100,42 @@ const Home: NextPage = () => {
               </div>
             </div>
           </Card>
-          <Card className="col-span-2">Hey, I am Miro 👋</Card>
-          <Card className="col-span-2">asd</Card>
+          <Card className="col-span-2 text-xl">
+            <div className="mb-4 font-semibold">Hey, I am Miro 👋</div>
+            <p>
+              I&apos;m a creative, open-minded & responsible senior software
+              engineer. Eight years of experience in building web applications.
+              I&apos;m quality-driven but can balance between speed & quality to
+              meet deadlines. Skills in responsive & cross-browser development,
+              designing UI & UX, improving performance, testing, mentoring.
+            </p>
+          </Card>
+          <div className="col-span-2 flex text-lg gap-4">
+            <Card>
+              <h4 className="font-semibold xl  mb-4">Education</h4>
+              <div className="text-base text-gray-400">2005 - 2010</div>
+              <div className="font-semibold">
+                BBA: Business And Managerial Economics, Engineering
+              </div>
+              <div>
+                Kyiv National University Of Technologies & Design - Kyiv
+              </div>
+            </Card>
+            <Card>
+              <h4 className="font-semibold xl mb-4">Interests & hobbies</h4>
+              <ul className="list-disc ml-4">
+                <li>
+                  Technologies, software development, blockchain, geopolitics
+                </li>
+                <li>Gaming, esports, streams</li>
+                <li>Traveling, exploring new locations and cultures</li>
+                <li>
+                  Sports activities - bicycling, running, surfing, football,
+                  other
+                </li>
+              </ul>
+            </Card>
+          </div>
         </Section>
         <Section id="skills" className="group">
           <h3 className="text-4xl text-center mb-10 group">Skills</h3>
@@ -202,21 +237,21 @@ const Home: NextPage = () => {
         </Section>
         <Section id="experience" className="bg-pattern justify-center">
           <h3 className="text-4xl text-center mb-10">Experience</h3>
-          <div style={{ height: '850px' }} className="filter grayscale hover:filter-none transition duration-1000 ease-in-out">
-            <Chrono mode="VERTICAL"
-              theme={{ 
-                primary: "rgba(17, 24, 39, var(--tw-bg-opacity))",
-                secondary: "rgba(52, 211, 153, var(--tw-bg-opacity))",
-                titleColor: "white",
+          <div
+            style={{ height: '850px' }}
+            className="filter grayscale hover:filter-none transition duration-1000 ease-in-out"
+          >
+            <Chrono
+              mode="VERTICAL"
+              theme={{
+                primary: 'rgba(17, 24, 39, var(--tw-bg-opacity))',
+                secondary: 'rgba(52, 211, 153, var(--tw-bg-opacity))',
+                titleColor: 'white',
               }}
             >
-              <div>
-                asd
-              </div>
-              <div>
-                asd 2
-              </div>
-              </Chrono>
+              <div>asd</div>
+              <div>asd 2</div>
+            </Chrono>
           </div>
         </Section>
         <Section id="contact" className="">

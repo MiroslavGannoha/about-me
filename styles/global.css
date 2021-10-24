@@ -4,7 +4,6 @@ html {
 }
 
 .bg-pattern {
-  opacity: 0.8;
   background-image: radial-gradient(#b8b8b8 0.5px, #ffffff 0.5px);
   background-size: 10px 10px;
 }
