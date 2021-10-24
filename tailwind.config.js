@@ -22,7 +22,10 @@ module.exports = {
         mobxjs: '#DE5C16',
         css3: '#2965F1',
         typescript: "#007acc"
-      }
+      },
+      animation: {
+        'spin-slow': 'spin 1.5s linear infinite',
+       }
     }
   },
   variants: {
@@ -31,6 +34,7 @@ module.exports = {
       textColor: ['active', 'visited'],
       boxShadow: ['active'],
       filter: ['hover', 'group-hover'],
+      animation: ['hover', 'group-hover'],
     }
   },
   plugins: [],

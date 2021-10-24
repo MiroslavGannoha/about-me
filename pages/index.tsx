@@ -142,28 +142,28 @@ const Home: NextPage = () => {
         <Section id="skills" className="group">
           <h3 className="text-4xl text-center mb-10 group">Skills</h3>
           <ul className="grid grid-flow-row grid-cols-3 sm:grid-cols-4 text-6xl gap-8 justify-items-center mt-6 mb-8 text-gray-600 max-w-7xl mx-auto">
-            <li className="group">
+            <li className="group hover:animate-pulse">
               <SkillImageLogo
                 src="/html5.svg"
                 title="HTML5"
                 className="contrast-150"
               />
             </li>
-            <li className="group">
+            <li className="group hover:animate-pulse">
               <SkillImageLogo
                 src="/css3.svg"
                 title="CSS3"
                 className="contrast-100"
               />
             </li>
-            <li className="group">
+            <li className="group hover:animate-pulse">
               <SkillImageLogo
                 src="/javascript.svg"
                 title="Javascript"
                 className="contrast-150"
               />
             </li>
-            <li className="group">
+            <li className="group hover:animate-pulse">
               <SkillImageLogo
                 src="/nodejs.svg"
                 title="NodeJS"
@@ -171,28 +171,28 @@ const Home: NextPage = () => {
                 className="contrast-150"
               />
             </li>
-            <li className="group">
+            <li className="group hover:animate-pulse">
               <SkillImageLogo
                 src="/typescript.svg"
                 title="Typescript"
                 className="contrast-150"
               />
             </li>
-            <li className="group">
+            <li className="group hover:animate-pulse">
               <SkillImageLogo
                 src="/react.svg"
                 title="ReactJS"
                 className="contrast-0"
               />
             </li>
-            <li className="group">
+            <li className="group hover:animate-pulse">
               <SkillImageLogo
                 src="/next.js.svg"
                 title="NextJS"
                 className="contrast-75"
               />
             </li>
-            <li className="group">
+            <li className="group hover:animate-pulse">
               <SkillImageLogo
                 src="/mobx.svg"
                 title="Mobx"
@@ -200,7 +200,7 @@ const Home: NextPage = () => {
               />
             </li>
 
-            <li className="group">
+            <li className="group hover:animate-pulse">
               <SkillImageLogo
                 src="/firebase.svg"
                 title="Firebase"
@@ -208,17 +208,17 @@ const Home: NextPage = () => {
               />
             </li>
 
-            <li className="group">
+            <li className="group hover:animate-pulse">
               <SkillImageLogo src="/emotion.png" title="EmotionJS" />
             </li>
-            <li className="group">
+            <li className="group hover:animate-pulse">
               <SkillImageLogo
                 src="/tailwind.svg"
                 title="TailwindCSS"
                 className="contrast-50"
               />
             </li>
-            <li className="group">
+            <li className="group hover:animate-pulse">
               <SkillImageLogo src="/graphql.svg" title="GraphQL" />
             </li>
           </ul>
