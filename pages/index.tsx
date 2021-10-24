@@ -49,8 +49,8 @@ const Home: NextPage = () => {
     <div>
       <Layout>
         <Section id="profile" className="bg-pattern">
-          <div className="max-w-7xl grid grid-rows-2 grid-flow-col gap-4 mx-auto">
-            <Card className="row-span-2 col-span-1 text-center">
+          <div className="max-w-7xl md:grid flex flex-col md:grid-rows-2 md:grid-flow-col gap-4 mx-auto">
+            <Card className="md:row-span-2 md:col-span-1 text-center">
               <NextImg
                 className="rounded-full"
                 src="/photo.jfif"
@@ -93,8 +93,8 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </Card>
-            <Card className="col-span-2 text-xl flex flex-col justify-between">
-              <div className="font-semibold">Hey, I am Miro 👋</div>
+            <Card className="md:col-span-2 text-xl flex flex-col justify-between">
+              <div className="font-semibold mb-4">Hey, I am Miro 👋</div>
               <p>
                 I&apos;m a creative, open-minded & responsible senior software
                 engineer. Currently working at Fluxon in the Moonwalk team. I
@@ -104,14 +104,14 @@ const Home: NextPage = () => {
                 development, designing UI & UX, improving performance, testing,
                 mentoring.
               </p>
-              <p className="font-semibold text-base">
+              <p className="font-semibold text-base mt-4">
                 <Link href="/miro-cv.pdf">
                   <FontAwesomeIcon icon={faFilePdf} className="mr-2" />
                   My Curriculum Vitae (CV)
                 </Link>
               </p>
             </Card>
-            <div className="col-span-2 flex text-lg gap-4">
+            <div className="md:col-span-2 flex text-lg gap-4 flex-col sm:flex-row">
               <Card>
                 <h4 className="font-semibold xl  mb-4">Education</h4>
                 <div className="text-base text-gray-400">2005 - 2010</div>

@@ -4,9 +4,9 @@ import { faCog } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRouter } from 'next/router';
 
-const NavbarLink: React.FC<{ href: string }> = ({ children, href }) => (
+const NavbarLink: React.FC<{ href: string, className?: string }> = ({ children, href, className }) => (
   <Link
-    className="font-semibold p-4 border-none"
+    className={`font-semibold p-4 border-none ${className}`}
     // activeClassName="text-green-800"
     href={href}
   >
@@ -56,10 +56,10 @@ export const Navbar = (): JSX.Element => {
 
   return (
     <nav className="group bg-gray-300 hover:bg-gray-400 w-full flex justify-between p-4 fixed top-0 shadow-md z-50 transition duration-500 ease-in-out">
-      <div>
+      <div className="">
         <NavbarLink href="/#profile">Miroslav Gannoha</NavbarLink>
       </div>
-      <div>
+      <div className="hidden md:block">
         <NavbarLink href="/#profile">Profile</NavbarLink>
         <NavbarLink href="/#skills">Skills</NavbarLink>
         <NavbarLink href="/#experience">Experience</NavbarLink>
