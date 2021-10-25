@@ -36,9 +36,8 @@ const SkillImageLogo = ({
       width={width || '65px'}
       height={height || '65px'}
       title={title}
-      className={`${
-        className || ''
-      } group-hover:filter-none filter grayscale transition duration-1000 ease-in-out`}
+      className={`${className || ''
+        } group-hover:filter-none filter grayscale transition duration-1000 ease-in-out`}
     />
     <SkillLogoDesc desc={title} />
   </>

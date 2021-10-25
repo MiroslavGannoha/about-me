@@ -38,7 +38,6 @@ export const Navbar = (): JSX.Element => {
       ? findNextSection(router.asPath as NavSection)
       : '/#skills'
   );
-  console.log(router.asPath, nextSection);
 
   useEffect(() => {
     let timer: NodeJS.Timeout | null = null;
@@ -55,8 +54,8 @@ export const Navbar = (): JSX.Element => {
   }, []);
 
   return (
-    <nav className="group bg-gray-300 hover:bg-gray-400 w-full flex justify-between p-4 fixed top-0 shadow-md z-50 transition duration-500 ease-in-out">
-      <div className="">
+    <nav className="bg-gray-300 hover:bg-gray-400 w-full flex justify-between p-4 fixed top-0 shadow-md z-50 transition duration-500 ease-in-out">
+      <div>
         <NavbarLink href="/#profile">Miroslav Gannoha</NavbarLink>
       </div>
       <div className="hidden md:block">
