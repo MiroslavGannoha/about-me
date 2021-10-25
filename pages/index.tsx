@@ -5,10 +5,10 @@ import { Input, Link, Section, Card, Textarea, FormGroup } from '../components';
 import { Layout } from '../layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
-import { faDownload, faFont } from '@fortawesome/free-solid-svg-icons';
+import { faFont } from '@fortawesome/free-solid-svg-icons';
 import { Button } from '../components/Button';
 import { Chrono } from 'react-chrono';
-import { faFilePdf, faEnvelope, faEye } from '@fortawesome/free-regular-svg-icons';
+import { faFilePdf, faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 const SkillLogoDesc = ({ desc }: { desc: string }) => (
   <div className="text-xs text-center text-gray-400 mt-2 border-t">{desc}</div>
@@ -315,9 +315,3 @@ const Home: NextPage = () => {
 };
 
 export default Home;
-
-//
-// background-color: #e5e5f7;
-// opacity: 0.8;
-// background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-// background-size: 10px 10px;
