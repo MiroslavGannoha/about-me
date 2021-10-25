@@ -99,7 +99,11 @@ const Home: NextPage = () => {
               <div className="font-semibold mb-4">Hey, I am Miro 👋</div>
               <p>
                 I&apos;m a creative, open-minded & responsible senior software
-                engineer. Currently working at Fluxon in the Moonwalk team. I
+                engineer. Currently working at&nbsp;
+                <Link href="https://www.fluxon.com/" className="text-xl">
+                  Fluxon
+                </Link>
+                &nbsp;in the Moonwalk team. I
                 have eight years of experience in building web applications.
                 I&apos;m quality-driven but can balance between speed & quality
                 to meet deadlines. Skills in responsive & cross-browser
