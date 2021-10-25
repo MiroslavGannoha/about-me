@@ -4,7 +4,7 @@ import NextImg from 'next/image';
 import { Input, Link, Section, Card, Textarea, FormGroup } from '../components';
 import { Layout } from '../layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+import { faChrome, faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
 import { faFont } from '@fortawesome/free-solid-svg-icons';
 import { Button } from '../components/Button';
 import { Chrono } from 'react-chrono';
@@ -80,6 +80,9 @@ const Home: NextPage = () => {
                 <div className="text-3xl flex gap-5 justify-center">
                   <Link href="mailto:miroslav.gannoha@gmail.com">
                     <FontAwesomeIcon icon={faEnvelope} />
+                  </Link>
+                  <Link href="http://miroslav-gannoha.me">
+                    <FontAwesomeIcon icon={faChrome} />
                   </Link>
                   <Link href="https://github.com/MiroslavGannoha">
                     <FontAwesomeIcon icon={faGithub} />
