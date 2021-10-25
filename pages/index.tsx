@@ -232,6 +232,7 @@ const Home: NextPage = () => {
             <Chrono
               mode="VERTICAL"
               cardHeight={0}
+              cardWidth={800}
               theme={{
                 primary: 'rgba(17, 24, 39, var(--tw-bg-opacity))',
                 secondary: 'rgba(52, 211, 153, var(--tw-bg-opacity))',
